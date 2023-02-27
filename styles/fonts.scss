@@ -1,0 +1,15 @@
+@import "./vars.scss";
+h1,
+h2,
+h3 {
+  font-family: var(--font-molle);
+}
+h4,
+p,
+q,
+small,
+nav,
+button,
+form {
+  font-family: var(--font-montserrat);
+}

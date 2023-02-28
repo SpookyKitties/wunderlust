@@ -438,7 +438,68 @@ main article > section section {
   border: 2px solid white;
 }
 main article > section img {
-  max-width: 50%;
+  max-width: 40%;
+}
+main article #contact .form-required {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: var(--font-montserrat);
+}
+main article #contact form {
+  display: flex;
+  width: 80%;
+  gap: 15px;
+  flex-direction: column;
+}
+main article #contact form > div > *,
+main article #contact form > div select {
+  width: 100%;
+  margin-bottom: 10px;
+}
+main article #contact form > div > label {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main article #contact form > div > label .required {
+  color: var(--purple);
+}
+main article #contact form > div select {
+  height: 54px;
+  background-color: var(--white);
+}
+main article #contact form > div fieldset {
+  border: none;
+}
+main article #contact form > div fieldset label {
+  height: 64px;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 15px;
+}
+main article #contact form > div fieldset label .radio-input input:checked {
+  accent-color: var(--purple);
+  outline: none;
+}
+main article #contact form > div fieldset label .radio-label {
+  align-self: center;
+}
+main article #contact form > div fieldset label input {
+  transform: scale(4);
+}
+main article #contact form input {
+  height: 48px;
+}
+main article #contact form input[type=text],
+main article #contact form input[type=tel],
+main article #contact form input[type=email],
+main article #contact form select {
+  border-style: solid;
+  border-color: var(--purple);
+}
+main article #contact form #mySubmit {
+  background-color: var(--purple);
+  color: var(--white);
+  border: none;
 }
 
 header {

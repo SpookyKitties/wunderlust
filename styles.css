@@ -611,6 +611,80 @@ header {
   background: rgb(85, 188, 213);
   background: linear-gradient(180deg, rgb(85, 188, 213) 0%, rgb(255, 255, 255) 100%);
 }
+@media screen and (min-width: 650px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: initial;
+    grid-template-areas: "area1 area2" "area1 area3" "area4 area4";
+  }
+  header a {
+    grid-area: area1 !important;
+  }
+  header h1 {
+    grid-area: area2 !important;
+  }
+  header p {
+    grid-area: area3 !important;
+  }
+  header nav {
+    padding: 0;
+    grid-area: area4 !important;
+  }
+  header nav label[for=toggle] {
+    display: none !important;
+  }
+  header nav ul {
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: none;
+    gap: 10px;
+  }
+  header nav li.active {
+    background-color: var(--yellow) !important;
+  }
+  header nav li {
+    color: var(--black);
+    background-color: var(--white) !important;
+  }
+  header nav ul {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1250px) {
+  header {
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 32px auto auto;
+    gap: 15px;
+    grid-template-areas: "area1 area2 area2" "area1 area4 area4";
+  }
+  header a {
+    grid-area: area1 !important;
+  }
+  header h1 {
+    grid-area: area2 !important;
+  }
+  header p {
+    grid-area: area4 !important;
+  }
+  header ul {
+    margin: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  header ul li {
+    height: 32px !important;
+    width: 120px !important;
+    padding: 10px;
+  }
+  header img {
+    width: 100% !important;
+  }
+}
 header h1 {
   grid-area: area3;
 }

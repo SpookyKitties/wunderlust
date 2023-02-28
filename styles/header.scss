@@ -10,6 +10,89 @@ header {
     "area3 area3"
     "area4 area4";
   gap: 10px;
+
+  @media screen and (min-width: 650px) {
+    display: grid;
+    // grid-template-areas: initial;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: initial;
+
+    grid-template-areas:
+      "area1 area2"
+      "area1 area3"
+      "area4 area4";
+
+    a {
+      grid-area: area1 !important;
+    }
+    h1 {
+      grid-area: area2 !important;
+    }
+    p {
+      grid-area: area3 !important;
+    }
+    nav {
+      label[for="toggle"] {
+        display: none !important;
+      }
+      ul {
+        padding: 0;
+        margin-left: 10%;
+        margin-right: 10%;
+        border: none;
+        gap: 10px;
+      }
+      padding: 0;
+      li.active {
+        background-color: var(--yellow) !important;
+      }
+      li {
+        color: var(--black);
+        background-color: var(--white) !important;
+      }
+
+      grid-area: area4 !important;
+      // grid-area: unset !important;
+      // grid-row-start: 3;
+      ul {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+  @media screen and (min-width: 1250px) {
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 32px auto auto;
+    gap: 15px;
+    grid-template-areas:
+      "area1 area2 area2"
+      "area1 area4 area4";
+    a {
+      grid-area: area1 !important;
+    }
+    h1 {
+      grid-area: area2 !important;
+    }
+    p {
+      grid-area: area4 !important;
+    }
+    ul {
+      margin: 0;
+      li {
+        height: 32px !important;
+        width: 120px !important;
+        padding: 10px;
+      }
+      position: fixed;
+      right: 0;
+      top: 0;
+      // grid-area: area3 !important;
+    }
+    img {
+      width: 100% !important;
+    }
+  }
   background: rgb(85, 188, 213);
   background: linear-gradient(
     180deg,

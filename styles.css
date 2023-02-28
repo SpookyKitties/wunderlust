@@ -369,6 +369,36 @@ form {
 main h4 {
   text-transform: uppercase;
 }
+@media screen and (min-width: 650px) {
+  main article #intro {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main article #intro > div {
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  main article #intro > div picture {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+@media screen and (min-width: 1250px) {
+  main article #intro {
+    grid-template-columns: 1fr 1fr;
+  }
+  main article #intro > div {
+    margin-right: 15px;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
 main article > section {
   width: 100%;
   display: flex;

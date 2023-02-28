@@ -4,7 +4,44 @@ main {
   }
   article {
     // margin: 0 10% 0 10%;
+    @media screen and (min-width: 650px) {
+      #intro {
+        display: grid;
+        grid-template-columns: 1fr;
+        > h2 {
+        }
+        > p {
+        }
+        > div {
+          // margin-right: 15px;
+          margin: 15px;
 
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px;
+          picture {
+            grid-column-start: 1;
+            grid-column-end: 3;
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 1250px) {
+      #intro {
+        grid-template-columns: 1fr 1fr;
+
+        > div {
+          margin-right: 15px;
+          grid-row-start: 1;
+          grid-column-start: 2;
+          grid-row-end: 3;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px;
+        }
+        // grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
     & > section {
       width: 100%;
       display: flex;

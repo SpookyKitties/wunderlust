@@ -388,6 +388,24 @@ main article > section#testimonials img {
 main article > section#testimonials section {
   height: initial;
 }
+@media screen and (min-width: 650px) {
+  main article > section#testimonials div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main article > section#testimonials div h4 {
+    font-size: 2em;
+  }
+  main article > section#testimonials div p,
+  main article > section#testimonials div q {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 1250px) {
+  main article > section#testimonials div {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 main article > section#about {
   background-color: var(--blue);
   text-align: center;

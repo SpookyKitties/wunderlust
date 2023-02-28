@@ -66,4 +66,26 @@
       border: none;
     }
   }
+
+  @media screen and (min-width: 650px) {
+    form {
+      fieldset {
+        display: flex;
+        justify-content: space-between;
+        label {
+          gap: 25px !important;
+          height: initial !important;
+          display: flex !important;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1250px) {
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+    }
+  }
 }

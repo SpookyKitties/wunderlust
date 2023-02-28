@@ -501,6 +501,24 @@ main article #contact form #mySubmit {
   color: var(--white);
   border: none;
 }
+@media screen and (min-width: 650px) {
+  main article #contact form fieldset {
+    display: flex;
+    justify-content: space-between;
+  }
+  main article #contact form fieldset label {
+    gap: 25px !important;
+    height: initial !important;
+    display: flex !important;
+  }
+}
+@media screen and (min-width: 1250px) {
+  main article #contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
 
 header {
   padding-top: 10px;

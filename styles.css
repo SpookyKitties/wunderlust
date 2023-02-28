@@ -669,6 +669,7 @@ header {
   }
   header p {
     grid-area: area4 !important;
+    font-size: 1.5em !important;
   }
   header ul {
     margin: 0 !important;

@@ -6,16 +6,16 @@ body {
   }
 
   h1 {
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
   h2 {
-    font-size: 2em;
+    font-size: 3.5em;
   }
   h3 {
-    font-size: 1.5em;
+    font-size: 3em;
   }
   h4 {
-    font-size: 1em;
+    font-size: 2.5em;
   }
   h1,
   h2,
@@ -24,5 +24,8 @@ body {
   p {
     margin: 10px 5% 10px 5%;
     // width: 80%;
+  }
+  p {
+    font-size: 2em;
   }
 }

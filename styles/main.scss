@@ -17,6 +17,33 @@ main {
         section {
           background-color: var(--teal);
         }
+
+        @media screen and (min-width: 650px) {
+          div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            > section {
+              height: 45vw;
+              width: 45vw;
+            }
+            h4 {
+              font-size: 2em;
+            }
+            p,
+            q {
+              font-size: 1.5em;
+            }
+          }
+        }
+        @media screen and (min-width: 1250px) {
+          div {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            > section {
+              height: 20vw;
+              width: 20vw;
+            }
+          }
+        }
       }
       &#testimonials {
         img {

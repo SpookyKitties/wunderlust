@@ -369,23 +369,32 @@ form {
 main h4 {
   text-transform: capitalize;
 }
-#plan {
+main article > section {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+main article > section#plan {
   background-color: var(--yellow);
 }
-
-#plan > div {
+main article > section#plan section {
+  background-color: var(--teal);
+}
+main article > section#testimonials img {
+  justify-self: center;
+}
+main article > section#testimonials section {
+  height: initial;
+}
+main article > section > div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 80%;
 }
-
-#plan section {
+main article > section section {
   width: 100%;
   height: 60vw;
   margin: 10px;
@@ -394,12 +403,10 @@ main h4 {
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
-  background-color: var(--teal);
   border-radius: 10px;
   border: 2px solid white;
 }
-
-#plan img {
+main article > section img {
   max-width: 50%;
 }
 
@@ -511,7 +518,8 @@ body h4,
 body p {
   margin: 10px 5% 10px 5%;
 }
-body p {
+body p,
+body q {
   font-size: 2em;
 }
 

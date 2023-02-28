@@ -615,4 +615,20 @@ body q {
   font-size: 2em;
 }
 
+footer {
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+footer p,
+footer a {
+  font-size: 16px !important;
+  color: var(--black);
+}
+footer a {
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=styles.css.map */

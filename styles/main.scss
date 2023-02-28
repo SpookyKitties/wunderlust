@@ -57,6 +57,14 @@ main {
             justify-self: center;
           }
         }
+
+        @media screen and (min-width: 650px) {
+          div {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: initial;
+          }
+        }
       }
       > div {
         display: flex;

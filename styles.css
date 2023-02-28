@@ -671,7 +671,7 @@ header {
     grid-area: area4 !important;
   }
   header ul {
-    margin: 0;
+    margin: 0 !important;
     position: fixed;
     right: 0;
     top: 0;

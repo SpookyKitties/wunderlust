@@ -367,7 +367,7 @@ form {
 }
 
 main h4 {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 main article > section {
   width: 100%;
@@ -387,6 +387,37 @@ main article > section#testimonials img {
 }
 main article > section#testimonials section {
   height: initial;
+}
+main article > section#about {
+  background-color: var(--blue);
+  text-align: center;
+  margin: 0 auto;
+}
+main article > section#about h4 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+main article > section#about p {
+  font-size: 1.5em;
+}
+main article > section#about > div {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 20px;
+}
+main article > section#about > div section {
+  border: none;
+  display: flex;
+  height: initial;
+  width: initial;
+  flex-direction: column;
+}
+main article > section#about > div img {
+  width: 20vw;
+  height: 20vw;
+  display: block;
+  justify-self: center;
 }
 main article > section > div {
   display: flex;
